@@ -93,4 +93,38 @@ Step:21 vi .gitignore - to view the file content
 
 > So keep in mind which repository we're working with at each stage of the process.
 ==========
+We're going to add all of our project files to the local repository to do that.
 Step:22 git add --all
+==========
+We can check this with git status which shows us that we have new files
+you're not yet committed but added to our local good repository.
+Step:23 git status
+==========
+Next we need to commit the files in our local repository.
+
+Committing means we've made a change and we want to add it to the project history because that's what it is doing when it makes a commit.
+
+Step:24 git commit -m "Commit message"
+==========
+>Now we need to push the project files to our online git hub repository.
+
+> We don't have much of a backup if our files are only on our computer and we won't be able to collaborate with anyone either.
+
+> That's where git hub comes in right now or a local install of git doesn't know about the online repository we created earlier.
+
+> We are going to tell it with the following command.
+
+Step:25 cmd: git remote add origin https://github.com/ajmalbuffy/GitandGithubtutorial
+==========
+> Now it's file pushing time to push our files from our local repository to our remote git hub repository type the below command.
+
+Step:26 cmd: git push -u origin master
+Username: ajmalbuffy
+Password: Git@1234
+
+Success message: Branch master set up to track remote branch master from origin.
+==========
+Step:27 Now check the communication between the local repository and onine repository using the command
+cmd: git status
+Success message: nothing to commit, working directory clean.
+			==========End==========
