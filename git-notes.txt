@@ -1,0 +1,96 @@
+Git Tutorial:
+
+What are Git and Github ?
+
+Software version control system: Tracks all changes to a piece of software.
+
+What is a Repository ?
+
+A place where you store code 
+
+Each software project should have one  repository.
+
+Step:1 Goto github.com
+Step:2 Signup 
+Step:3 Setup the personal details
+Step:4 At the right top of the page there will be a plus sign click on that.
+Step:5 If you click the plus (+) sign you will see a drop down options
+Step:6 From the options select New repository
+==========
+> Repository is just a place where we are going to store the code.
+> Each software project you create should have own repository
+> It is best practice to keep it seprate from each other
+> This one we are creating is just for practice, so we can call it as anyone we want.
+==========
+Step:7 Enter the name of your repository
+Step:8 Keep the Initialize the repository with a README option unselected.
+Step:9 Click create repository.
+==========
+> You now have a place online where you can put code for a specific project.
+> You can also collaborate on that code with other people if you wish.
+> First though you need to set up a local repository that will send or push code to your online get hub repository.
+> In fact you can see that there are instructions on this screen which will go through in more detail
+> But this tells us that one of our next options is to create a new repository on the command line.
+==========
+Step:10 Copy the URL or location in your browser address bar up here.
+==========
+Git is the local software you install on your computer.
+Git hub is the place where you store your code on line
+==========
+Step:11 Goto the site 
+http://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+==========
+Follow the steps provided in the site and install the Git
+cmd: git
+cmd: git --version
+
+The above commands are used to see does we have git in our system or not ? If not please install the Git.
+==========
+Step:12 Goto any directory where you have your project files, which you need to put in the git.
+==========
+To post the code on GitHub first we need to create a repository in this project folder
+note: code posted on Git is public don't post the code which you consider as a private one.
+==========
+Step:13 Type the cmd: git init
+==========
+As a ouptut you should see Initialized empty Git repository in /home/Aji/Desktop/Git and Github tutorial/.git/
+It indicates that Git has been installed correctly.
+==========
+Step:14 Navigate to the folder using command prompt where you have initialize the Git, from there type cmd: ls -al
+==========
+You can see there's a file called .Git in here which indicates that I've already set up the get repository in this folder with the Git init command we used in the previous lecture.
+==========
+Now we'll want to create a read me file which is like an online project description that you provide
+for anyone who might be interested in learning about or using your project.
+==========
+Step:15: cmd: echo "# Simple Hello World Html Program" >> README.md
+Step:16: ls -la
+Step:17: cat README.md
+==========
+> The next step is to create a git ignore file which tells git what to ignore.
+> Inside our project directory.
+> This is great if we have files in this directory that we don't want to upload to our git hub online
+==========
+Step:18 Create a git ignore file
+cmd: touch .gitignore
+Step:19 cmd: ls  -al
+Step:20 Add the git ignore file list for each projects
+Step:21 vi .gitignore - to view the file content
+==========
+> This means that any files matching these lines will not be uploaded to my online hub repository.
+
+> These steps may seem like a pain but doing them now will save you significant hassle down the road if
+
+> You don't create a damn good ignore file before you start uploading code to get hub.
+
+> You'll need to remove unwanted files later from your online hub repository.
+==========
+> We're ready to make our first get commit to do this we're going to add all of our project files to our local repository the local repository is the one we created on our computer by typing git init and then configured
+
+> This is a fundamental concept of git and git hub.
+
+> You'll always have a local repository and a remote online repository.
+
+> So keep in mind which repository we're working with at each stage of the process.
+==========
+Step:22 git add --all
